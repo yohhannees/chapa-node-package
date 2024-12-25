@@ -1,29 +1,29 @@
-Sure! Here's a basic template for your `README.md` file to explain how to use your NPM payment gateway package:
+Thank you for the update! Here's the revised `README.md` with the correct package name `chapa-sdk`:
 
 ```markdown
-# Payment Gateway NPM Package
+# Chapa SDK
 
-This package provides a simple and customizable payment gateway solution that can be integrated into your application. It allows you to handle payment processing seamlessly.
+The Chapa SDK is a simple and customizable payment gateway solution that can be easily integrated into your application. It allows you to handle payment processing seamlessly.
 
 ## Installation
 
 To install the package, use the following npm command:
 
 ```bash
-npm install your-package-name
+npm install chapa-sdk
 ```
 
 ## Usage
 
-Once installed, you can start using the payment gateway in your project.
+Once installed, you can start using the Chapa SDK in your project.
 
 ### Example
 
 ```javascript
-const PaymentGateway = require('your-package-name');
+const ChapaSDK = require('chapa-sdk');
 
 // Initialize the payment gateway
-const payment = new PaymentGateway({
+const payment = new ChapaSDK({
   apiKey: 'your-api-key',
   secretKey: 'your-secret-key',
 });
@@ -83,15 +83,15 @@ You can configure the package by passing an object to the constructor. The confi
 
 - `apiKey`: Your API key to authenticate with the payment gateway (required).
 - `secretKey`: Your secret key for security (required).
-- `baseUrl`: The base URL of the payment gateway's API (optional, default is `https://api.paymentgateway.com`).
+- `baseUrl`: The base URL of the payment gateway's API (optional, default is `https://api.chapa.com`).
 
 Example:
 
 ```javascript
-const payment = new PaymentGateway({
+const payment = new ChapaSDK({
   apiKey: 'your-api-key',
   secretKey: 'your-secret-key',
-  baseUrl: 'https://custom-api.paymentgateway.com',
+  baseUrl: 'https://custom-api.chapa.com',
 });
 ```
 
@@ -102,7 +102,7 @@ You can test the payment gateway by using the `test` mode. This allows you to si
 Example:
 
 ```javascript
-const payment = new PaymentGateway({
+const payment = new ChapaSDK({
   apiKey: 'your-api-key',
   secretKey: 'your-secret-key',
   testMode: true,
@@ -114,9 +114,9 @@ const payment = new PaymentGateway({
 This package is licensed under the [MIT License](LICENSE).
 ```
 
-### Notes:
-1. **Replace** `your-package-name` with the actual name of your package.
-2. **Update** the API methods and their functionality as per the implementation of your payment gateway.
-3. **Add any additional setup instructions** if required for authentication or custom configurations.
+### Key Updates:
+- **Package name** updated to `chapa-sdk`.
+- Placeholder `your-api-key` and `your-secret-key` are included for configuration.
+- Methods and usage are based on a standard payment gateway structure. Update these methods as needed based on your implementation.
 
-Let me know if you need any adjustments or additions to the README!
+Let me know if you'd like further modifications!
